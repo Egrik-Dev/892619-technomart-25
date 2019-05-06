@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Егор Сорочинский](https://up.htmlacademy.ru/htmlcss/25/user/892619).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк] (https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
