@@ -2,11 +2,111 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Интернет-магазин Техномарт</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	<!-- HEADER -->
 
+		<header class="main-header">
+			<div class=“user-menu”>
+				 <img src="img/header-logo.svg" width="200" height="50" alt="Логотип интернет-магазина Техномарт">
+				 <ul class="header-btn-users">
+				 	<li class="header-btn-search">Поиск:<!-- Здесь будет поле с формой для поиска --></li>
+				 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
+				 	<li class="header-btn-cart"><a href="cart.html">Корзина: 0</a></li>
+				 	<li class="header-btn-order"><a href="order.html">Оформить заказ</a></li>
+				 </ul>
+			</div>
+			<div class="header-bottom">
+				<h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<ul class="header-contacts">
+					<li class="header-tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></li>
+					<li class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
+				</ul>
+				<ul class="header-btn-login">
+					<li class="header-sign-in">Войти</li>
+					<li class="header-sign-up">Регистрация</li>
+				</ul>
+			</div>
+			<nav> <!-- Класс не стал добавлять, вроде навигация везде одинаковая -->
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about-us.html">Компания</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="special.html">Спецпредложения</a></li>
+				<li><a href="delivery.html">Доставка</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</nav>
+		</header>
+
+	<!-- MAIN -->
+
+		<section class="main-about-us">
+			<h2 class="visually-hidden">О компании</h2>
+			<p class="title-section">КОМПАНИЯ «Техномарт»</p>
+			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+			<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+			Техномарт работает со многими транспортными компаниями:</p>
+			<ul class="transport-company">
+				<li>Деловые линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
+			</ul>
+			<a class="btn" href="about-us.html">Подробнее о компании</a>
+		</section>
+		<section class="main-contacts">
+			<h2>Контакты</h2>
+			<b>Вы можете забрать товар сами,<br> 
+				заехав в наш офис:</b>
+				<!-- Здесь будет карта -->
+			<p>
+				<a class="btn" href="contacts.html">Заблудились? Напишите Нам!</a>
+			</p>
+		</section>
+
+	<!-- FOOTER -->
+
+		<footer class="footer">
+			<div сlass="footer-top">
+				<img src="img/footer-logo.svg" width="200" height="100" alt="Логотип интернет-магазина Техномарт">
+				<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				+7 (812) 555-05-55</p>
+				<div class="footer-nav">
+					<ul class="footer-site-nav">
+						<li><a href="about-us.html">Компания</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="footer-products-nav">
+						<li><a href="catalog/materials.html">Материалы</a></li>
+						<li><a href="catalog/equipment.html">Техника</a></li>
+						<li><a href="catalog/tool.html">Инструмент</a></li>
+						<li><a href="special.html">Спецпредложения</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-copyright">
+					© 2010–2019 Компания «Техномарт»<br>
+					Все права защищены
+				</p>
+				<div class="footer-social">
+					<ul>
+						<li class="footer-social-button"><a href="https://vk.com/">Вконтакте</a></li>
+						<li class="footer-social-button"><a href="https://www.facebook.com">Фэйсбук</a></li>
+						<li class="footer-social-button"><a href="https://www.instagram.com">Инстаграм</a></li>
+					</ul>
+				</div>
+				<ul class="site-developer">
+					<li>Обратная связь:<br>
+					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+					<li>Разработано<br>
+					<a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
+				</ul>
+			</div>
+		</footer>
   </body>
 </html>
