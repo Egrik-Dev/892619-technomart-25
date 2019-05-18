@@ -11,7 +11,9 @@
 		<header class="main-header">
 			<div class=“user-menu”>
 				 <img src="img/header-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
-				 <form class="header-search">Поиск:<!-- Здесь будет поле с формой для поиска --></form>
+				 <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+				 	<label class="visually-hidden" for="field-header-search">Поиск</label>
+				 	<input type="search" name="input-header-search" id="field-header-search" placeholder="Поиск:"></form>
 				 <ul class="header-btn-users">
 				 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
 				 	<li class="header-btn-cart"><a href="cart.html">Корзина: 0</a></li>
@@ -25,8 +27,8 @@
 					<li class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
 				</ul>
 				<ul class="header-btn-login">
-					<li class="header-sign-in">Войти</li>
-					<li class="header-sign-up">Регистрация</li>
+					<li class="header-sign-in"><a href="login.html">Войти</a></li>
+					<li class="header-sign-up"><a href="registration.html">Регистрация</a></li>
 				</ul>
 			</div>
 			<nav class="main-nav">
@@ -59,9 +61,12 @@
 			<section class="main-contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<img src="img/map.png" width="300" height="158" alt="Схема проезда">
-				<!-- Здесь будет карта -->
+				<a href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833">
+					<img src="img/map.png" width="300" height="158" alt="Схема проезда в офис Техномарт">
+				</a>
+				<p>
 				<a class="btn" href="contacts.html">Заблудились? Напишите Нам!</a>
+				</p>
 			</section>
 		</main>
 
@@ -110,5 +115,26 @@
 				</ul>
 			</div>
 		</footer>
+
+	<!-- МОДАЛЬНЫЕ ОКНА -->
+
+		<!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+		
+			<section class="modal modal-write-us">
+	      		<h2 class="visually-hidden">Форма обратной связи</h2>
+	      		<form action="https://echo.htmlacademy.ru" method="post">
+	      			<label>
+	      				Ваше имя:<input type="text" name="feedback-name" placeholder="Имя Фамилия">
+	      			</label>
+	      			<label>
+	      				Ваш e-mail:<input type="email" name="feedback-email" placeholder="email@example.com">
+	      			</label>
+	      			<label>
+	      				Текст письма:<textarea name="feedback-text" placeholder="В свободной форме"></textarea>
+	      			</label>
+	      			<button class="btn" type="submit">Отправить</button>
+	      			<button class="btn btn-close" type="button">Закрыть</button>
+	      		</form>
+	    	</section>
   </body>
 </html>
