@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Интернет-магазин Техномарт</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Интернет-магазин Техномарт</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">	</head>
+	<body>
 
 	<!-- HEADER -->
 
 		<header class="main-header">
-			<div class=“user-menu”>
-				 <img src="img/header-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
+			<div class="user-menu">
+				 <img class="logo" src="img/header-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
 				 <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-				 	<label class="visually-hidden" for="field-header-search">Поиск</label>
-				 	<input type="search" name="input-header-search" id="field-header-search" placeholder="Поиск:"></form>
+				 	<label class="visually-hidden one" for="field-header-search">Поиск</label>
+				 	<input type="search" name="input-header-search" id="field-header-search" placeholder="Поиск:">
+				 </form>
 				 <ul class="header-btn-users">
 				 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
 				 	<li class="header-btn-cart"><a href="cart.html">Корзина: 0</a></li>
@@ -30,18 +33,18 @@
 					<li class="header-sign-in"><a href="login.html">Войти</a></li>
 					<li class="header-sign-up"><a href="registration.html">Регистрация</a></li>
 				</ul>
+				<nav class="main-nav">
+					<ul class="nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about-us.html">Компания</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="special.html">Спецпредложения</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="main-nav">
-				<ul class="nav">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="about-us.html">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="special.html">Спецпредложения</a></li>
-					<li><a href="delivery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
 		</header>
 
 	<!-- MAIN -->
@@ -72,7 +75,7 @@
 
 		<footer class="footer">
 			<div class="footer-top">
-				<img src="img/footer-logo.png" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
+				<img class="logo" src="img/footer-logo.png" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
 				<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				7 (812) 555-05-55</p>
 				<div class="footer-nav">
@@ -121,15 +124,12 @@
 			<section class="modal modal-write-us">
 	      		<h2 class="visually-hidden">Форма обратной связи</h2>
 	      		<form action="https://echo.htmlacademy.ru" method="post">
-	      			<label>
-	      				Ваше имя:<input type="text" name="feedback-name" placeholder="Имя Фамилия">
-	      			</label>
-	      			<label>
-	      				Ваш e-mail:<input type="email" name="feedback-email" placeholder="email@example.com">
-	      			</label>
-	      			<label>
-	      				Текст письма:<textarea name="feedback-text" placeholder="В свободной форме"></textarea>
-	      			</label>
+	      			<label for="field-name">Ваше имя:</label>
+	      				<input type="text" name="feedback-name" id="field-name" placeholder="Имя Фамилия">
+	      			<label for="field-email">Ваш e-mail:</label>
+	      				<input type="email" name="feedback-email" id="field-email" placeholder="email@example.com">
+	      			<label for="field-text">Текст письма:</label>
+	      				<textarea name="feedback-text" id="field-text" placeholder="В свободной форме"></textarea>
 	      			<button class="btn" type="submit">Отправить</button>
 	      			<button class="btn btn-close" type="button">Закрыть</button>
 	      		</form>

@@ -1,0 +1,654 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font: inherit;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
+
+.btn-filter {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+
+  background-color: transparent;
+}
+
+.btn-filter:hover {
+  border-color: #bdc6ca;  
+}
+
+.btn-filter:active {
+  border-color: #ee3643;
+}
+
+
+
+header .user-menu {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.logo {
+  box-shadow: 0px 5px 0px 0px rgba(238, 54, 67, 0.24);
+}
+
+/*Как изменить цвет логотипа при наведении и нажатии не разобрался*/
+
+/*Как сделать белый цвет плейсхолдера тоже не врубил*/
+
+.header-search input {
+  font: inherit;
+
+  background-color: #293449;
+  border: none;
+}
+
+.header-search input:hover {
+  color: #ffffff;
+
+  background-color: #212a3a;
+}
+
+.header-search input:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.header-btn-users {
+  list-style: none;
+}
+
+.header-btn-users a {
+  color: #ffffff;
+}
+
+.header-btn-users a:hover {
+  background-color: #212a3a;
+}
+
+.header-btn-users a:active {
+  opacity: 0.6;
+  background-color: #161d29;
+}
+
+.cart-full a {
+  background-color: #ee3643;
+}
+
+.header-btn-order {
+  text-align: center;
+}
+
+.header-btn-order a {
+  background-color: #63a63e;
+}
+
+.header-btn-order a:hover {
+  background-color: #5fbb2d;
+}
+
+.header-btn-order a:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+
+/*Выравнить по центру Оформить заказ*/
+
+header .header-bottom {
+  color: #ee3643;
+
+  background-color: #f3f7f9;
+}
+
+.header-title {
+  color: #ee3643;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.header-contacts,
+.header-btn-login,
+.nav {
+  list-style: none;
+}
+
+.header-tel {
+  border: 3px solid #ffffff;
+}
+
+.header-contacts {
+  text-align: center;  
+}
+
+.header-contacts a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #ee3643;
+}
+
+.header-adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-btn-login {
+  text-align: center;
+}
+
+.header-btn-login a,
+.header-profile-authorization a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.header-btn-login a:hover {
+  color: #ee3643;
+}
+
+.header-btn-login a:active,
+.header-profile-authorization a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.header-profile-info li:nth-child(1) {
+  list-style: none;
+}
+
+.header-profile-info {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.header-profile-info a {
+  color: #32425c;
+  text-decoration: underline;  
+}
+
+.header-profile-info a:hover {
+  color: #ee3643;
+}
+
+.header-profile-info a:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+
+.main-nav {
+  font-size: 17px;
+  line-height: 17px; 
+  
+  background-color: #32425c;
+}
+
+.nav li {
+  text-align: center; 
+}
+
+.nav a {
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.nav a:hover {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.nav a:active {
+  color: #ffffff;
+  opacity: 0.5;
+
+  background-color: #1d2739;
+}
+
+.container {  
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.inner-container {
+  font-family: "PT-Sans";
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-about-us h2,
+.main-contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400; 
+}
+
+/*Как у списка сделать такие красные маркеры?*/
+
+.transport-company li {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  text-decoration: underline;
+  color: #ee3643;
+}
+
+.inner-title {
+  font-family: "Cuprum";
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+
+  background-color: #f2f6f8;
+}
+
+.filters {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background-color: #f7f3ec;
+}
+
+.filters-group {
+  border: none;
+}
+
+
+.filters-group legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter-price-range {
+  background-color: #f7f3ec;  
+}
+
+.filter-price-range p {
+  background-color: #ffffff;
+}
+
+.filter-checkbox,
+.filter-radio {
+  list-style: none;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.catalog-sorting-container {
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color: #f7f3ec;
+}
+
+.sorting-title {
+  font-weight: 400; 
+}
+
+.sorting-list,
+.arrows-sorting {
+  list-style: none;
+}
+
+.item-sorting-current  a {
+  color: #ee3643;
+}
+
+/*Трабл с рамкой из за opacity. Как исправить хз*/
+.item-sorting a {
+  border-bottom: 1px dotted #ee3643; 
+
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.item-sorting-current  a:hover,
+.item-sorting a:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643; 
+  opacity: 1;
+}
+
+.item-sorting-current  a:active,
+.item-sorting a:active {
+  color: #ee3643;
+  opacity: 1;
+  border: none;
+}
+
+.sorting-arrow a {
+  color: #c5c5c5;  
+}
+
+.sorting-arrow a:hover {
+  color: #000000;
+}
+
+.sorting-current a,
+.sorting-arrow a:active {
+  color: #ee3643; 
+}
+
+.catalog-product {
+  list-style: none;
+}
+
+.product-title a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-product,
+.catalog-product-hover {
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-product:hover,
+.catalog-product-hover:hover { 
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+  font-weight: 700; 
+}
+
+.price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 700;
+
+  background-color: #ee3643; 
+}
+
+.product-btn-buy {
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #63a63e;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 3px 0px 0px #367315;
+}
+
+.product-btn-buy:hover,
+.product-btn-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.product-btn-buy:active {
+  background-color: #518534;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.catalog-product-hover {
+  list-style: none;
+}
+
+.product-btn-bookmarks {
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #32425c;
+  text-align: center;
+
+  background-color: transparent;
+  border-radius: 2px;
+  border: 3px solid #63a63e;
+}
+
+.product-btn-bookmarks:hover,
+.product-btn-bookmarks:focus {
+  border: 3px solid #32425c;
+}
+
+.product-btn-bookmarks:active {
+  border: 3px solid #c1c6ce;
+  opacity: 0.3;
+}
+
+.list-pag {
+  list-style: none;
+}
+
+.btn-pag a {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+
+  background-color: transparent;
+}
+
+.btn-pag-current a {
+  border: none;
+  background-color: #ee3643;
+}
+
+.btn-pag a:hover {
+  border-color: #bdc6ca;  
+}
+
+.btn-pag a:active {
+  border-color: #ee3643;
+}
+
+.category-description {
+
+  background-color: #f2f6f8;
+}
+
+.category-description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.footer-top {
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.footer-nav ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-site-nav a {
+  color: #ffffff;
+}
+
+.footer-products-nav a {
+  color: #ffd180;
+}
+
+.footer-site-nav a:hover,
+.footer-products-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-site-nav a:active,
+.footer-products-nav a:active {
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.footer-copyright {
+  text-align: left;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul,
+.site-developer {
+  list-style: none;
+}
+
+.footer-social a {
+  color: #ffffff;
+
+  background-color: #212a3a;
+}
+
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
+}
+
+.site-developer {
+  text-align: left;
+}
+
+.site-developer a {
+  color: #ffd180;
+}
+
+.site-developer a:hover {
+  text-decoration: underline;
+}
+
+.site-developer a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.modal-write-us {
+  color: #000000;
+  font-size: 18px;
+  line-height: 18px;
+
+  border-top: 7px solid #ff5358;
+  background-color: #ffffff;
+}
+
+.modal-write-us input {
+  border: 2px solid #dee3e4;
+}
+
+/*Тут тоже в плейсхолдер не понял как стиль добавить. В нете нашел такой способо, но он не заработал
+*/.modal-write-us input::-webkit-input-placeholder,
+.modal-write-us input:-moz-placeholder {
+  color: red; /*Например*/
+}
+
+
+
+
+
+
+
+

@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Интернет-магазин Техномарт - Каталог - Перфораторы</title>
-  </head>
-  <body>
+ 	<head>
+	    <meta charset="utf-8">
+	    <title>Интернет-магазин Техномарт - Каталог - Перфораторы</title>
+	   	<link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">	
+	</head>
+  	<body>
 
 	<!-- HEADER -->
 
 		<header class="main-header">
-			<div class=“user-menu”>
-				 <a class="header-logo" href="index.html"><img src="img/header-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт"></a>
+			<div class="user-menu">
+				 <a href="index.html"><img class="logo" src="img/header-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт"></a>
 				 <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
 				 	<label class="visually-hidden" for="field-header-search">Поиск</label>
 				 	<input type="search" name="input-header-search" id="field-header-search" placeholder="Поиск:"></form>
 				 <ul class="header-btn-users">
 				 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
-				 	<li class="header-btn-cart-full"><a href="cart.html">Корзина: 10</a></li>
+				 	<li class="header-btn-cart cart-full"><a href="cart.html">Корзина: 10</a></li>
 				 	<li class="header-btn-order"><a href="order.html">Оформить заказ</a></li>
 				 </ul>
 			</div>
@@ -50,7 +53,7 @@
 
 	<!-- MAIN -->
 
-		<main class="container">
+		<main class="inner-container">
 			<ul class="breadcrumbs">
 				<li><a class="breadcrumb-main" href="index.html"></a></li>
 				<li><a href="catalog.html">Каталог</a></li>
@@ -58,86 +61,79 @@
 				<li class="breadcrumb-current">Перфораторы</li>
 			</ul>
 			<section class="catalog">
-				<h1 class="title">Перфораторы</h1>
+				<h1 class="inner-title">Перфораторы</h1>
 
 				<div class="filters">
-					<h2 class="catalog-container">Фильтр:</h2>
+					<h2 class="filter-title">Фильтр:</h2>
 					<form action="https://echo.htmlacademy.ru" method="get" oninput="minpriceoutput.value=filterpricemin.value">
-						<fieldset>
-							<legend>Цена</legend>
-							<div class="catalog-container">
+						<fieldset class="filters-group">
+							<legend>Цена:</legend>
+							<div class="filter-price-range">
 								<label class="visually-hidden" for="field-filter-price">Ползунок с фильтром цены</label>
 								<input type="range" name="filterpricemin" id="field-filter-price" min="0" max="25550" step="100">
 							</div>
-							<div class="catalog-container">
+							<div class="filter-price-range">
 								<output name="minpriceoutput">0</output>
 							<p>-</p>
 								<output name="maxpriceoutput">25550</output>
 							</div>
 						</fieldset>
 
-						<fieldset>
-							<legend>Производители</legend>
+						<fieldset class="filters-group">
+							<legend>Производители:</legend>
 							<ul class="filter-checkbox">
 								<li>
-									<label>
-										<input type="checkbox" name="Bosch" checked>Bosch
-									</label>
+									<input class="filter-input" type="checkbox" id="bosch-field" name="Bosch" checked>
+									<label for="bosch-field">Bosch</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="Интерскол">Интерскол
-									</label>
+									<input class="filter-input" type="checkbox" id="interskol-field" name="Интерскол">
+									<label for="interskol-field">Интерскол</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="Makita" checked>Makita
-									</label>
+									<input class="filter-input" type="checkbox" id="makita-field" name="Makita" checked>
+									<label for="makita-field">Makita</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="Devalt">Devalt
-									</label>
+									<input class="filter-input" type="checkbox" id="devalt-field" name="Devalt">
+									<label for="devalt-field">Devalt</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="Hitachi">Hitachi
-									</label>
+									<input class="filter-input" type="checkbox" id="hitachi-field" name="Hitachi">
+									<label for="hitachi-field">Hitachi</label>
 								</li>
 							</ul>
 						</fieldset>
 
-						<fieldset>
-							<legend>Питание</legend>
+						<fieldset class="filters-group">
+							<legend>Питание:</legend>
 							<ul class="filter-radio">
 								<li>
-									<label>
-										<input type="radio" name="filter-power" checked>Аккумуляторные
-									</label>
+									<input class="filter-input" type="radio" id="battery-field" name="filter-power" checked>
+									<label for="battery-field">Аккумуляторные</label>
 								</li>
 								<li>
-									<label>
-										<input type="radio" name="filter-power">Сетевые
-									</label>
+									<input class="filter-input" type="radio" id="chains-field" name="filter-power">
+									<label for="chains-field">Сетевые</label>
 								</li>
 							</ul>
 						</fieldset>
 
-						<button class="btn btn-filter" type="submit">Показать</button>
+						<button class="btn-filter" type="submit">Показать</button>
 					</form>
 				</div>
 
 				<div class="products">
 					<div class="catalog-sorting-container">
-						<h2 class="catalog-sorting-container">Сортировка:</h2>
-						<ul class="title-sorting">
-							<li class="title-sorting-current"><button type="button">По цене</button></li>
-							<li class="title-sorting"><button type="button">По типу</button></li>
-							<li class="title-sorting"><button type="button">По функционалу</button></li>
+						<h2 class="sorting-title">Сортировка:</h2>
+						<ul class="sorting-list"> 
+							<li class="item-sorting-current"><a href="#">По цене</a></li>
+							<li class="item-sorting"><a href="#">По типу</a></li>
+							<li class="item-sorting"><a href="#">По функционалу</a></li>
 						</ul>
 						<ul class="arrows-sorting">
-							<li class="sorting-descending sorting-current"><button class="visually-hidden">Сортировка по убыванию</button></li>
-							<li class="sorting-ascending"><button class="visually-hidden">Сортировка по возрастанию</button></li>
+							<li class="sorting-current sorting-arrow"><a href="#">Сортировка по убыванию</a></li>
+							<li class="sorting-arrow"><a href="#">Сортировка по возрастанию</a></li>
 						</ul>
 					</div>	
 					<h2 class="visually-hidden">Список товаров - Перфораторы</h2>
