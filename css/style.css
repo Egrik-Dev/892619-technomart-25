@@ -429,6 +429,7 @@ header .header-bottom {
 .product-item,
 .product-item-hover {
   border: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .product-item:hover,
@@ -459,7 +460,6 @@ header .header-bottom {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
 
   background-color: #63a63e;
   border: none;
