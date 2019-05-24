@@ -1,3 +1,5 @@
+/* БАЗОВЫЕ */
+
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +16,8 @@ body {
 a {
   text-decoration: none;
 }
+
+/* КНОПКИ */
 
 .btn {
   font: inherit;
@@ -58,9 +62,15 @@ a {
   border-color: #ee3643;
 }
 
+/* ХЕДЕР */
 
+.header {
+  color: #ffffff;
 
-header .user-menu {
+  background-color: #f3f7f8;
+}
+
+.header-user-menu {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -76,7 +86,7 @@ header .user-menu {
 
 /*Как сделать белый цвет плейсхолдера тоже не врубил*/
 
-.header-search input {
+.header-search input[type="search"] {
   font: inherit;
 
   background-color: #293449;
@@ -167,7 +177,6 @@ header .header-bottom {
 .header-contacts a {
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
   color: #ee3643;
 }
 
@@ -177,8 +186,8 @@ header .header-bottom {
   color: #32425c;
 }
 
-.header-btn-login {
-  text-align: center;
+.header-btn-login li {
+  text-align: center;  
 }
 
 .header-btn-login a,
@@ -254,20 +263,7 @@ header .header-bottom {
   background-color: #1d2739;
 }
 
-.container {  
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-.inner-container {
-  font-family: "PT-Sans";
-  color: #000000;
-
-  background-color: #ffffff;
-}
+/* MAIN */
 
 .main-about-us h2,
 .main-contacts h2 {
@@ -278,12 +274,17 @@ header .header-bottom {
 
 /*Как у списка сделать такие красные маркеры?*/
 
-.transport-company li {
+.transport-company-list {
   font-size: 18px;
   line-height: 20px;
 }
 
+.inner-main {
+  font-family: "PT-Sans";
+  color: #000000;
 
+  background-color: #ffffff;
+}
 
 .breadcrumbs {
   font-size: 13px;
@@ -425,13 +426,13 @@ header .header-bottom {
   color: #000000;
 }
 
-.catalog-product,
-.catalog-product-hover {
+.product-item,
+.product-item-hover {
   border: 1px solid #e5e5e5;
 }
 
-.catalog-product:hover,
-.catalog-product-hover:hover { 
+.product-item:hover,
+.product-item-hover:hover { 
   box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
@@ -546,17 +547,18 @@ header .header-bottom {
   text-transform: uppercase;
 }
 
+/* FOOTER */
 
 .footer-top {
   color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
 
   background-color: #32425c;
 }
 
 .footer-nav ul {
   list-style: none;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .footer-site-nav a {
@@ -625,6 +627,8 @@ header .header-bottom {
   color: #ee3643;
   text-decoration: none;
 }
+
+/* МОДАЛЬНЫЕ ОКНА */
 
 .modal-write-us {
   color: #000000;
