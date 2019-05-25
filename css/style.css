@@ -382,24 +382,28 @@ header .header-bottom {
 
 /*Трабл с рамкой из за opacity. Как исправить хз*/
 .item-sorting a {
-  border-bottom: 1px dotted #ee3643; 
-
   color: #000000;
 
+  border-bottom: 1px dotted #ee3643; 
+}
+
+.item-sorting span {
   opacity: 0.3;
 }
 
-.item-sorting-current  a:hover,
-.item-sorting a:hover {
+.item-sorting span:hover,
+.item-sorting-current a:hover {
   color: #000000;
+
   border-bottom: 1px solid #ee3643; 
   opacity: 1;
 }
 
-.item-sorting-current  a:active,
-.item-sorting a:active {
+.item-sorting span:active,
+.item-sorting a:active,
+.item-sorting-current a:active {
   color: #ee3643;
-  opacity: 1;
+
   border: none;
 }
 
