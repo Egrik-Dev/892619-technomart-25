@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -93,6 +93,7 @@ a {
   border: none;
 }
 
+
 .header-search input:hover {
   color: #ffffff;
 
@@ -126,10 +127,6 @@ a {
   background-color: #ee3643;
 }
 
-.header-btn-order {
-  text-align: center;
-}
-
 .header-btn-order a {
   background-color: #63a63e;
 }
@@ -157,7 +154,6 @@ header .header-bottom {
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
-  text-align: left;
 }
 
 .header-contacts,
@@ -184,10 +180,6 @@ header .header-bottom {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-}
-
-.header-btn-login li {
-  text-align: center;  
 }
 
 .header-btn-login a,
@@ -265,8 +257,7 @@ header .header-bottom {
 
 /* MAIN */
 
-.main-about-us h2,
-.main-contacts h2 {
+.index-title {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400; 
@@ -280,7 +271,7 @@ header .header-bottom {
 }
 
 .inner-main {
-  font-family: "PT-Sans";
+  font-family: "PT Sans";
   color: #000000;
 
   background-color: #ffffff;
@@ -419,7 +410,7 @@ header .header-bottom {
   color: #ee3643; 
 }
 
-.catalog-product {
+.list-products {
   list-style: none;
 }
 
