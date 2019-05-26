@@ -71,6 +71,9 @@ a {
 }
 
 .header-user-menu {
+  width: 100%;
+  margin-bottom: 45px;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -78,13 +81,44 @@ a {
   background-color: #293449;
 }
 
+.wrapper {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+.header-logo {
+  width: 110px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  background-color: #ee3643;
+  box-shadow: 0px 5px 0px 0px rgba(238, 54, 67, 0.24);
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
 .logo {
   box-shadow: 0px 5px 0px 0px rgba(238, 54, 67, 0.24);
 }
 
-/*Как изменить цвет логотипа при наведении и нажатии не разобрался*/
 
 /*Как сделать белый цвет плейсхолдера тоже не врубил*/
+
+.header-search {
+  width: 270px;
+  padding: 13px 0;
+}
 
 .header-search input[type="search"] {
   font: inherit;
@@ -93,6 +127,9 @@ a {
   border: none;
 }
 
+.header-search input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
 
 .header-search input:hover {
   color: #ffffff;
@@ -107,8 +144,18 @@ a {
 }
 
 .header-btn-users {
+  margin: 0;
+  padding: 13px 0;
+  display: flex;
+  width: 450px;
+
   list-style: none;
 }
+
+.header-btn-users li {
+  width: 150px;
+}
+
 
 .header-btn-users a {
   color: #ffffff;
@@ -140,15 +187,21 @@ a {
   opacity: 0.5;
 }
 
-/*Выравнить по центру Оформить заказ*/
+.header-bottom {
+  width: 100%;
 
-header .header-bottom {
   color: #ee3643;
 
   background-color: #f3f7f9;
 }
 
 .header-title {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  margin-right: 70px;
+  width: 195px;
+
   color: #ee3643;
   font-style: italic;
   font-size: 16px;
@@ -167,6 +220,9 @@ header .header-bottom {
 }
 
 .header-contacts {
+  width: 270px;
+  margin-right: 70px;
+
   text-align: center;  
 }
 
@@ -180,6 +236,10 @@ header .header-bottom {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.header-btn-login {
+  display: flex;
 }
 
 .header-btn-login a,
@@ -199,6 +259,10 @@ header .header-bottom {
 .header-profile-authorization a:active {
   color: #000000;
   opacity: 0.3;
+}
+
+.header-sign-in {
+  margin-right: 10px;
 }
 
 .header-profile-info li:nth-child(1) {
@@ -226,10 +290,25 @@ header .header-bottom {
 }
 
 .main-nav {
+  width: 835px;
+  padding-left: 50px;
+  padding-right: 55px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+
   font-size: 17px;
   line-height: 17px; 
   
   background-color: #32425c;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav li {
@@ -262,8 +341,6 @@ header .header-bottom {
   line-height: 30px;
   font-weight: 400; 
 }
-
-/*Как у списка сделать такие красные маркеры?*/
 
 .transport-company-list {
   font-size: 18px;
