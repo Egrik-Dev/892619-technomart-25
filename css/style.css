@@ -17,6 +17,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* КНОПКИ */
 
 .btn {
@@ -65,9 +88,15 @@ a {
 /* ХЕДЕР */
 
 .header {
+  margin-bottom: 60px;
+
   color: #ffffff;
 
   background-color: #f3f7f8;
+}
+
+.header-catalog {
+  margin-bottom: 20px;
 }
 
 .header-user-menu {
@@ -84,45 +113,50 @@ a {
 .wrapper {
   width: 940px;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-
 .header-logo {
+  margin: 0;
+  padding: 0;
   width: 110px;
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 12px;
-  padding-bottom: 11px;
   background-color: #ee3643;
-  box-shadow: 0px 5px 0px 0px rgba(238, 54, 67, 0.24);
-}
-
-.header-logo:hover {
-  background-color: #ca2c37;
-}
-
-.header-logo:active {
-  background-color: #ba2732;
+  box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 .logo {
-  box-shadow: 0px 5px 0px 0px rgba(238, 54, 67, 0.24);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+.inner-header-logo:hover {
+  background-color: #ca2c37;
+}
 
-/*Как сделать белый цвет плейсхолдера тоже не врубил*/
+.inner-header-logo:active {
+  background-color: #ba2732;
+}
 
 .header-search {
+  position: relative;
   width: 270px;
-  padding: 13px 0;
+  padding: 12px 0;
 }
 
 .header-search input[type="search"] {
   font: inherit;
 
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  align-items: center;
+
+  color: #ffffff;
   background-color: #293449;
   border: none;
 }
@@ -131,33 +165,58 @@ a {
   color: #ffffff;
 }
 
-.header-search input:hover {
+.header-search:hover input[type="search"],
+.header-search:hover {
   color: #ffffff;
 
   background-color: #212a3a;
 }
 
-.header-search input:focus {
+.header-search input[type="search"]:focus {
   color: #000000;
 
   background-color: #ffffff;
 }
 
+.header-search::after {
+  position: absolute;
+  left: 19px;
+  top: 12px;
+
+  content: "";
+  
+  width: 18px;
+  height: 18px;
+  
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.header-search:hover::after {
+  opacity: 1;
+}
+
+/*Не знаю как сделать всю форму в белом цвете при фокусе инпута и псевдоэлемент красным*/
+
 .header-btn-users {
-  margin: 0;
-  padding: 13px 0;
   display: flex;
+  margin: 0;
+  padding: 0;
   width: 450px;
 
   list-style: none;
 }
 
-.header-btn-users li {
-  width: 150px;
-}
-
-
-.header-btn-users a {
+.header-btn-bookmarks a,
+.header-btn-cart a {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 28px;
   color: #ffffff;
 }
 
@@ -170,11 +229,55 @@ a {
   background-color: #161d29;
 }
 
-.cart-full a {
-  background-color: #ee3643;
+.header-btn-bookmarks a::after {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+
+  content: "";
+  
+  width: 18px;
+  height: 18px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.header-btn-bookmarks a:hover::after {
+  opacity: 1;
+}
+
+.header-btn-bookmarks a:active::after {
+  opacity: 0.3;
+}
+
+.header-btn-cart a::after {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+
+  content: "";
+  
+  width: 18px;
+  height: 18px;
+  
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .header-btn-order a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  color: #ffffff;
+
   background-color: #63a63e;
 }
 
@@ -187,18 +290,14 @@ a {
   opacity: 0.5;
 }
 
-.header-bottom {
-  width: 100%;
-
-  color: #ee3643;
-
-  background-color: #f3f7f9;
+.cart-full a {
+  background-color: #ee3643;
 }
 
 .header-title {
   margin: 0;
   padding: 0;
-  margin-left: 50px;
+  padding-left: 50px;
   margin-right: 70px;
   width: 195px;
 
@@ -215,21 +314,45 @@ a {
   list-style: none;
 }
 
-.header-tel {
-  border: 3px solid #ffffff;
-}
-
 .header-contacts {
+  margin: 0;
+  padding: 0;
   width: 270px;
   margin-right: 70px;
 
   text-align: center;  
 }
 
-.header-contacts a {
+.header-tel {
   font-size: 21px;
   line-height: 21px;
+
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 70px;
+
+  border: 3px solid #ffffff;
+}
+
+.header-tel a {
+  position: relative;
   color: #ee3643;
+}
+
+.header-tel a::after {
+  position: absolute;
+  left: -58px;
+  top: 2px;
+
+  content: "";
+  
+  width: 19px;
+  height: 19px;
+  
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-adress {
@@ -239,16 +362,33 @@ a {
 }
 
 .header-btn-login {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .header-btn-login a,
-.header-profile-authorization a {
+.btn-profile {
+  display: block;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.header-sign-in a {
+  padding-top: 12px;
+  padding-right: 27px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+}
+
+.header-sign-up a {
+  padding-top: 12px;
+  padding-right: 25px;
+  padding-bottom: 12px;
+  padding-left: 25px;
 }
 
 .header-btn-login a:hover {
@@ -336,15 +476,62 @@ a {
 
 /* MAIN */
 
+.main p {
+  font-family: 'PT Sans';
+}
+
+.main-about-us {
+  width: 520px;
+  margin-right: 120px;
+}
+
 .index-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 400; 
 }
 
+.main-about-us p {
+  margin: 0;
+  padding: 0;
+}
+
+.first-p {
+  margin-bottom: 30px;
+}
+
+.second-p {
+  width: 390px;
+  margin-bottom: 20px;
+}
+
+.third-p {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  margin-bottom: 30px;
+}
+
 .transport-company-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
   font-size: 18px;
   line-height: 20px;
+
+  list-style: none;
+}
+
+.main-contacts {
+  width: 300px;
+}
+
+.map {
+  margin-bottom: 40px;
 }
 
 .inner-main {
@@ -354,7 +541,23 @@ a {
   background-color: #ffffff;
 }
 
+.catalog {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
 .breadcrumbs {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -374,6 +577,13 @@ a {
 }
 
 .inner-title {
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+
   font-family: "Cuprum";
   color: #32425c;
   font-size: 30px;
@@ -384,6 +594,9 @@ a {
 }
 
 .filters {
+  width: 220px;
+  margin-right: 20px;
+
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -391,6 +604,13 @@ a {
 }
 
 .filter-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 13px;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -399,26 +619,76 @@ a {
 }
 
 .filters-group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.last-list-filters {
+  margin-bottom: 80px;
+
   border: none;
 }
 
 
 .filters-group legend {
+  margin-bottom: 13px;
+
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .filter-price-range {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+
   background-color: #f7f3ec;  
 }
 
-.filter-price-range p {
+.filter-price-value {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.filter-output {
+  width: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-align: center;
+
+  background-color: #f7f3ec; 
+}
+
+.filter-price-value p {
+  margin: 0;
+  padding: 10px;
+
   background-color: #ffffff;
 }
 
-.filter-checkbox,
+.filter-checkbox {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
 .filter-radio {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -428,7 +698,14 @@ a {
   opacity: 0.4;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-sorting-container {
+  display: flex;
+  width: 700px;
   line-height: 18px;
   text-transform: uppercase;
   
@@ -488,6 +765,11 @@ a {
 }
 
 .list-products {
+  margin: 0;
+  padding: 0;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -499,8 +781,16 @@ a {
 
 .product-item,
 .product-item-hover {
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   border: 1px solid #e5e5e5;
   text-align: center;
+}
+
+.list-products li:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .product-item:hover,
@@ -577,6 +867,8 @@ a {
 }
 
 .list-pag {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -608,19 +900,28 @@ a {
 }
 
 .category-description {
-
+  padding-top: 70px;
+  padding-bottom: 70px;
   background-color: #f2f6f8;
 }
 
 .category-description h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+.description-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* FOOTER */
 
-.footer-top {
+.footer {
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
@@ -628,8 +929,37 @@ a {
   background-color: #32425c;
 }
 
+.footer-top {
+  margin-bottom: 50px;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-nav ul {
   list-style: none;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+
+  box-shadow: 0px 5px 0px 0px #b52933;
+}
+
+.footer-logo-contacts {
+  margin-right: 60px;
+}
+
+.footer-site-nav {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-site-nav a {
@@ -651,6 +981,9 @@ a {
 }
 
 .footer-bottom {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -658,11 +991,12 @@ a {
   background-color: #293449;
 }
 
-.footer-copyright {
-  text-align: left;
+.footer-bottom .footer-copyright {
+  margin-right: 160px;
 }
 
 .footer-social {
+  margin-right: 120px;
   text-align: center;
 }
 
