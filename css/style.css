@@ -43,8 +43,15 @@ input[type="radio"].visually-hidden {
 /* КНОПКИ */
 
 .btn {
+  display: inline-block;
   font: inherit;
 
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  cursor: pointer;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -53,6 +60,10 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border: none;
+}
+
+.main-contacts .btn-container {
+  display: block;
 }
 
 .btn:hover {
@@ -88,15 +99,9 @@ input[type="radio"].visually-hidden {
 /* ХЕДЕР */
 
 .header {
-  margin-bottom: 60px;
-
   color: #ffffff;
 
   background-color: #f3f7f8;
-}
-
-.header-catalog {
-  margin-bottom: 20px;
 }
 
 .header-user-menu {
@@ -145,37 +150,41 @@ input[type="radio"].visually-hidden {
 .header-search {
   position: relative;
   width: 270px;
-  padding: 12px 0;
 }
 
-.header-search input[type="search"] {
+.header-search-input {
   font: inherit;
 
   margin: 0;
-  padding: 0;
-  margin-left: 50px;
-  align-items: center;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  width: 100%;
+  box-sizing: border-box;
 
   color: #ffffff;
   background-color: #293449;
   border: none;
 }
 
-.header-search input[type="search"]::-webkit-input-placeholder {
+.header-search-input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.header-search:hover input[type="search"],
+.header-search:hover .header-search-input,
 .header-search:hover {
   color: #ffffff;
 
   background-color: #212a3a;
 }
 
-.header-search input[type="search"]:focus {
+.header-search-input:focus {
   color: #000000;
 
   background-color: #ffffff;
+
+  outline: none;
 }
 
 .header-search::after {
@@ -195,13 +204,13 @@ input[type="radio"].visually-hidden {
 }
 
 .header-search:hover::after {
-  opacity: 1;
+  opacity: 0.1;
 }
-
-/*Не знаю как сделать всю форму в белом цвете при фокусе инпута и псевдоэлемент красным*/
 
 .header-btn-users {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 450px;
@@ -269,6 +278,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.header-btn-bookmarks a:hover::after,
+.header-btn-cart a:hover::after {
+  opacity: 1;
+}
+
+.header-btn-bookmarks a:active::after,
+.header-btn-cart a:active::after {
+  opacity: 0.3;
+}
+
 .header-btn-order a {
   display: block;
   padding-top: 12px;
@@ -295,10 +314,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-title {
-  margin: 0;
-  padding: 0;
-  padding-left: 50px;
-  margin-right: 70px;
+  margin: 0 70px 0 50px;
   width: 195px;
 
   color: #ee3643;
@@ -317,6 +333,7 @@ input[type="radio"].visually-hidden {
 .header-contacts {
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
   width: 270px;
   margin-right: 70px;
 
@@ -378,10 +395,35 @@ input[type="radio"].visually-hidden {
 }
 
 .header-sign-in a {
+  position: relative;
   padding-top: 12px;
   padding-right: 27px;
   padding-bottom: 12px;
   padding-left: 48px;
+}
+
+.header-sign-in a::after {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+
+  content: "";
+  
+  width: 20px;
+  height: 17px;
+  
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.header-sign-in a:hover::after {
+  opacity: 1;
+}
+
+.header-sign-in a:active::after {
+  opacity: 0.3;
 }
 
 .header-sign-up a {
@@ -393,6 +435,10 @@ input[type="radio"].visually-hidden {
 
 .header-btn-login a:hover {
   color: #ee3643;
+}
+
+.header-btn-login a:active {
+  opacity: 0.3;
 }
 
 .header-btn-login a:active,
@@ -410,6 +456,9 @@ input[type="radio"].visually-hidden {
 }
 
 .header-profile-info {
+  margin: 0;
+  padding: 0;
+
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
@@ -430,12 +479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav {
-  width: 835px;
-  padding-left: 50px;
-  padding-right: 55px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 40px;
+  width: 100%;
   margin-bottom: 65px;
 
   font-size: 17px;
@@ -445,17 +489,20 @@ input[type="radio"].visually-hidden {
 }
 
 .nav {
+  display: flex;
+
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: space-between;
 }
 
-.nav li {
-  text-align: center; 
-}
-
 .nav a {
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: #ffffff;
 
   background-color: #32425c;
@@ -475,6 +522,11 @@ input[type="radio"].visually-hidden {
 }
 
 /* MAIN */
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
 
 .main p {
   font-family: 'PT Sans';
@@ -520,10 +572,33 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+  margin-left: 35px;
   font-size: 18px;
   line-height: 20px;
 
   list-style: none;
+}
+
+.transport-company-list li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.transport-company-list li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.transport-company-list li::after {
+  position: absolute;
+  left: -35px;
+  top: 8px;
+
+  content: "";
+  
+  width: 25px;
+  height: 2px;
+  
+  background-color: #ee3643;
 }
 
 .main-contacts {
@@ -535,6 +610,8 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-main {
+  padding-top: 20px;
+
   font-family: "PT Sans";
   color: #000000;
 
@@ -542,9 +619,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  width: 940px;
+/*  width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px;*/
   margin-bottom: 60px;
 }
 
@@ -553,9 +630,9 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
-  width: 940px;
+/*  width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px;*/
   margin-bottom: 20px;
 
   font-size: 13px;
@@ -589,6 +666,7 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
 
   background-color: #f2f6f8;
 }
@@ -900,6 +978,7 @@ input[type="radio"].visually-hidden {
 }
 
 .category-description {
+  width: 100%;
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #f2f6f8;
@@ -913,7 +992,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.description-wrapper {
+.inner-wrapper {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -943,10 +1022,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.footer-nav ul {
-  list-style: none;
-}
-
 .footer-logo {
   margin-bottom: 25px;
 
@@ -954,12 +1029,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo-contacts {
+  width: 330px;
   margin-right: 60px;
-}
-
-.footer-site-nav {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-site-nav a {
@@ -980,6 +1051,30 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
+.footer-nav {
+  width: 550px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav .footer-site-nav {
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav .footer-products-nav {
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-bottom {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -995,12 +1090,13 @@ input[type="radio"].visually-hidden {
   margin-right: 160px;
 }
 
-.footer-social {
+.footer-bottom .footer-social {
   margin-right: 120px;
+  display: flex;
   text-align: center;
 }
 
-.footer-social ul,
+.footer-social,
 .site-developer {
   list-style: none;
 }
@@ -1014,6 +1110,13 @@ input[type="radio"].visually-hidden {
 .footer-social a:hover,
 .footer-social a:active {
   background-color: #ee3643;
+}
+
+.footer-btn-vk {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .site-developer {

@@ -12,7 +12,7 @@
 
 	<!-- HEADER -->
 
-		<header class="header header-catalog">
+		<header class="header">
 			<div class="header-user-menu">
 				<div class="wrapper">
 					<a href="index.html">				
@@ -21,8 +21,9 @@
 					 	</div>
 					 </a>					 
 					 <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-					 	<label class="visually-hidden" for="field-header-search">Поиск</label>
-					 	<input type="search" name="input-header-search" id="field-header-search" placeholder="Поиск:"></form>
+					 	<label class="visually-hidden one" for="field-header-search">Поиск</label>
+					 	<input class="header-search-input" type="text" name="search" id="field-header-search" placeholder="Поиск:">
+					 </form>
 					 <ul class="header-btn-users">
 					 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
 					 	<li class="header-btn-cart cart-full"><a href="cart.html">Корзина: 10</a></li>
@@ -61,6 +62,7 @@
 	<!-- MAIN -->
 
 		<main class="inner-main">
+			<div class="inner-wrapper">
 				<ul class="breadcrumbs">
 					<li class="breadcrumb-main"><a href="index.html"></a></li>
 					<li><a href="catalog.html">Каталог</a></li>
@@ -250,13 +252,14 @@
 									<li class="btn-pag"><a href="#">2</a></li>
 									<li class="btn-pag"><a href="#">3</a></li>
 									<li class="btn-pag btn-pag-next"><a href="#">Следующая</a></li>
-								</ul>	
+								</ul>
+							</div>	
 						</div>
-					</div>
-				</section>			
+				</section>	
+			</div>		
 
 				<section class="category-description">
-					<div class="description-wrapper">
+					<div class="inner-wrapper">
 						<h2>Пара слов о перфораторах</h2>
 						<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
