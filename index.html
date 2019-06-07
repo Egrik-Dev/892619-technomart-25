@@ -20,7 +20,7 @@
 					 	</div>
 					 <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
 					 	<label class="visually-hidden one" for="field-header-search">Поиск</label>
-					 	<input class="header-search-input" type="text" name="input-header-search" id="field-header-search" placeholder="Поиск:">
+					 	<input class="header-search-input" type="text" name="search" id="field-header-search" placeholder="Поиск:">
 					 </form>
 					 <ul class="header-btn-users">
 					 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
@@ -29,8 +29,8 @@
 					 </ul>
 				 </div>
 			</div>
-			<div class="wrapper">
-				<h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+			<div class="wrapper wrapper-header">
+				<h1 class="header-title">Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
 				<ul class="header-contacts">
 					<li class="header-tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></li>
 					<li class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
@@ -56,7 +56,7 @@
 	<!-- MAIN -->
 
 		<main class="main">
-			<div class="wrapper">
+			<div class="wrapper main-wrapper">
 				<section class="main-about-us">
 					<h2 class="index-title">КОМПАНИЯ «Техномарт»</h2>
 					<div class="first-p">
@@ -117,8 +117,8 @@
 					Все права защищены</p>
 					<ul class="footer-social">
 						<li class="footer-social-button"><a class="footer-btn-vk" href="https://vk.com/"><span class="visually-hidden">Вконтакте</span></a></li>
-						<li class="footer-social-button"><a href="https://www.facebook.com">Фэйсбук</a></li>
-						<li class="footer-social-button"><a href="https://www.instagram.com">Инстаграм</a></li>
+						<li class="footer-social-button"><a class="footer-btn-fb" href="https://www.facebook.com"><span class="visually-hidden">Фэйсбук</span></a></li>
+						<li class="footer-social-button"><a class="footer-btn-instagram" href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span></a></li>
 					</ul>
 					<ul class="site-developer">
 						<li>
@@ -126,7 +126,7 @@
 							<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 						</li>
 						<li>
-							<b>Разработано</b>
+							<b>Разработано -</b>
 							<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 						</li>
 					</ul>
@@ -139,17 +139,34 @@
 		<!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
 		
 			<section class="modal modal-write-us">
+				<button class="modal-close" type="button"></button>
 	      		<h2 class="visually-hidden">Форма обратной связи</h2>
-	      		<form action="https://echo.htmlacademy.ru" method="post">
-	      			<label for="field-name">Ваше имя:</label>
+	      		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+	      			<p class="modal-item">
+	      				<label for="field-name">Ваше имя:</label>
 	      				<input type="text" name="feedback-name" id="field-name" placeholder="Имя Фамилия">
-	      			<label for="field-email">Ваш e-mail:</label>
+	      			</p>
+	      			<p class="modal-item">
+	      				<label for="field-email">Ваш e-mail:</label>
 	      				<input type="email" name="feedback-email" id="field-email" placeholder="email@example.com">
-	      			<label for="field-text">Текст письма:</label>
-	      				<textarea name="feedback-text" id="field-text" placeholder="В свободной форме"></textarea>
-	      			<button class="btn" type="submit">Отправить</button>
-	      			<button class="btn btn-close" type="button">Закрыть</button>
+	      			</p>
+	      			<p class="modal-item modal-item-textarea">
+	      				<label for="field-text">Текст письма:</label>
+	      				<textarea name="feedback-text" id="field-text" rows="5" placeholder="В свободной форме"></textarea>
+	      			</p>
 	      		</form>
+	      		<div class="modal-write-us-footer">
+	      			<div class="modal-footer-wrapper">
+	    				<button class="btn btn-wrapper" type="submit">Отправить</button>
+	    			</div>
+	   			</div>
 	    	</section>
+	    	<section class="modal modal-map">
+	    		<h2 class="visually-hidden">Как до нас добраться</h2>
+	    		<p><img src="img/modal-map.png" alt="Схема проезда" width="940" height="446"></p>
+				<button class="modal-close" type="button"></button>
+	    	</section>
+
+	    	<div class="overlay"></div>
   </body>
 </html>
