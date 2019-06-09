@@ -76,10 +76,10 @@
 				<section class="main-contacts">
 					<h2 class="index-title">Контакты</h2>
 					<p class="third-p">Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833">
+					<a class="btn-map" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833">
 						<img class="map" src="img/map.png" width="300" height="158" alt="Схема проезда в офис Техномарт">
 					</a>
-					<a class="btn btn-container" href="contacts.html">Заблудились? Напишите Нам!</a>
+					<a class="btn btn-container btn-write-us" href="contacts.html">Заблудились? Напишите Нам!</a>
 				</section>
 			</div>
 		</main>
@@ -142,31 +142,34 @@
 				<button class="modal-close" type="button"></button>
 	      		<h2 class="visually-hidden">Форма обратной связи</h2>
 	      		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-	      			<p class="modal-item">
-	      				<label for="field-name">Ваше имя:</label>
-	      				<input type="text" name="feedback-name" id="field-name" placeholder="Имя Фамилия">
-	      			</p>
-	      			<p class="modal-item">
-	      				<label for="field-email">Ваш e-mail:</label>
-	      				<input type="email" name="feedback-email" id="field-email" placeholder="email@example.com">
-	      			</p>
-	      			<p class="modal-item modal-item-textarea">
-	      				<label for="field-text">Текст письма:</label>
-	      				<textarea name="feedback-text" id="field-text" rows="5" placeholder="В свободной форме"></textarea>
-	      			</p>
-	      		</form>
-	      		<div class="modal-write-us-footer">
-	      			<div class="modal-footer-wrapper">
-	    				<button class="btn btn-wrapper" type="submit">Отправить</button>
-	    			</div>
-	   			</div>
+		      			<div class="modal-wrapper">
+		      			<p class="modal-item">
+		      				<label for="field-name">Ваше имя:</label>
+		      				<input class="write-us-name" type="text" name="feedback-name" id="field-name" placeholder="Имя Фамилия">
+		      			</p>
+		      			<p class="modal-item">
+		      				<label for="field-email">Ваш e-mail:</label>
+		      				<input class="write-us-mail" type="email" name="feedback-email" id="field-email" placeholder="email@example.com">
+		      			</p>
+		      			<p class="modal-item modal-item-textarea">
+		      				<label for="field-text">Текст письма:</label>
+		      				<textarea class="feedback-text" name="feedback-text" id="field-text" rows="5" placeholder="В свободной форме"></textarea>
+		      			</p>
+	      			</div>
+	      			<div class="modal-write-us-footer">
+		      			<div class="modal-footer-wrapper">
+		    				<button class="btn btn-wrapper" type="submit">Отправить</button>
+		    			</div>
+	   				</div>
+	   			</form>
 	    	</section>
 	    	<section class="modal modal-map">
 	    		<h2 class="visually-hidden">Как до нас добраться</h2>
+	    		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
 	    		<p><img src="img/modal-map.png" alt="Схема проезда" width="940" height="446"></p>
 				<button class="modal-close" type="button"></button>
 	    	</section>
-
 	    	<div class="overlay"></div>
+		<script src="js/index.js"></script>
   </body>
 </html>

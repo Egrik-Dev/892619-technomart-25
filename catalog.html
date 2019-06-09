@@ -79,11 +79,18 @@
 							<form action="https://echo.htmlacademy.ru" method="get" oninput="minpriceoutput.value=filterpricemin.value">
 								<fieldset class="filters-group">
 									<legend>Цена:</legend>
-									<div class="filter-price-range">
+									<div class="filter-price-range visually-hidden">
 										<label class="visually-hidden" for="field-filter-price">Ползунок с фильтром цены</label>
 										<input type="range" name="filterpricemin" id="field-filter-price" min="0" max="25550" step="100">
 									</div>
-									<div class="filter-price-value">
+     								<div class="range-controls">
+        								<div class="scale">
+         									<div class="bar"></div>
+      									</div>
+    							    	<div class="range-toggle range-toggle-min"></div>
+ 								    	<div class="range-toggle range-toggle-max"></div>
+ 								    </div>									
+ 								    <div class="filter-price-value">
 										<output class="filter-output" name="minpriceoutput">0</output>
 									<p>-</p>
 										<output class="filter-output" name="maxpriceoutput">25550</output>
@@ -326,5 +333,6 @@
 	      	</div>
 	   	</section>
 	   	<div class="overlay"></div>
+	   	<script src="js/catalog.js"></script>
 	</body>
 </html>
