@@ -25,9 +25,9 @@
 					 	<input class="header-search-input" type="text" name="search" id="field-header-search" placeholder="Поиск:">
 					 </form>
 					 <ul class="header-btn-users">
-					 	<li class="header-btn-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
-					 	<li class="header-btn-cart cart-full"><a href="cart.html">Корзина: 10</a></li>
-					 	<li class="header-btn-order"><a href="order.html">Оформить заказ</a></li>
+					 	<li><a class="header-btn-bookmarks" href="bookmarks.html">Закладки: 0</a></li>
+					 	<li><a class="header-btn-cart" href="cart.html">Корзина: 10</a></li>
+					 	<li><a class="header-btn-order" href="order.html">Оформить заказ</a></li>
 					 </ul>
 				</div>
 			</div>
@@ -332,6 +332,21 @@
 	      		</div>
 	      	</div>
 	   	</section>
+
+		<!-- ТОВАР В ЗАКЛАДКИ -->
+
+		<section class="modal modal-bookmark">
+			<button class="modal-close" type="button"></button>
+	      	<h2 class="modal-bookmark-heading">Товар добавлен в закладки!</h2>
+	      	<div class="modal-write-us-footer">
+	      		<div class="modal-footer-wrapper">
+	      			<a class="btn modal-btn-order" href="order.html">Перейти в закладки</a>
+	      			<button class="btn btn-next" type="button">Продолжить покупки</button>
+	      		</div>
+	      	</div>
+	   	</section>
+
+
 	   	<div class="overlay"></div>
 	   	<script src="js/catalog.js"></script>
 	</body>
