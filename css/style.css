@@ -155,8 +155,6 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-/*---------------*/
-
 .header-search {
   position: relative;
   width: 270px;
@@ -364,7 +362,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-bottom: 39px;
   width: 270px;
-  /*margin-right: 69px;*/
 
   text-align: center;  
 }
@@ -593,6 +590,7 @@ input[type="radio"].visually-hidden {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0 22px;
@@ -627,12 +625,90 @@ input[type="radio"].visually-hidden {
 /* MAIN */
 
 .main-wrapper {
-  padding-top: 75px;
+  padding-top: 53px;
   padding-bottom: 85px;
 }
 
 .main p {
   font-family: 'PT Sans';
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.categories-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.categories-block {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+}
+
+.categories-block:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.categories-materials {
+  background: url("../img/icon-paint-bucket.svg") no-repeat 213px 31px;
+  background-color: #ffbf47;
+}
+
+.categories-tools {
+  background: url("../img/icon-screwdriver.svg") no-repeat 197px 33px;
+  background-color: #3bbce3;
+}
+
+.categories-technics {
+  background: url("../img/icon-tractor.svg") no-repeat 191px 31px;
+  background-color: #dc91d8;
+}
+
+.categories-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  margin-left: 22px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.categories-link {
+  display: inline-block;
+  margin: 12px 0 0 25px;
+  padding: 10px 24px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  color: #ffffff; 
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.categories-link-tools {
+  padding: 10px 26px;
+}
+
+.categories-link-technics {
+  padding: 10px 29px;
+}
+
+.categories-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.categories-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-about-us {
@@ -738,6 +814,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
   font-size: 13px;
   line-height: 18px;
@@ -1332,6 +1409,11 @@ input[type="radio"].visually-hidden {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
+.flag-new-categories {
+  top: 0px;
+  right: 0px;
+}
+
 
 .product-btn-buy {
   position: relative;
@@ -1557,12 +1639,14 @@ input[type="radio"].visually-hidden {
 .footer-nav .footer-site-nav {
   margin-bottom: 31px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .footer-nav .footer-products-nav {
   padding-left: 25px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1579,6 +1663,7 @@ input[type="radio"].visually-hidden {
 
 .footer-bottom .footer-copyright {
   margin-right: 165px;
+  width: 227px;
 }
 
 .footer-bottom .footer-social {
