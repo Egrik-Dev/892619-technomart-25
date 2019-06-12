@@ -641,7 +641,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
   list-style: none;
 }
 
@@ -671,7 +670,8 @@ input[type="radio"].visually-hidden {
   background-color: #dc91d8;
 }
 
-.categories-title {
+.categories-title,
+.advantages-title {
   margin: 0;
   padding: 0;
   margin-top: 21px;
@@ -682,10 +682,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.categories-link {
+.categories-link,
+.advantages-link {
   display: inline-block;
-  margin: 12px 0 0 25px;
-  padding: 10px 24px;
+  margin: 12px 0 0 23px;
+  padding: 10px 0;
+  width: 135px;
+  text-align: center;
+  border-radius: 3px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -695,21 +699,202 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.categories-link-tools {
-  padding: 10px 26px;
-}
-
-.categories-link-technics {
-  padding: 10px 29px;
-}
-
-.categories-link:hover {
+.categories-link:hover,
+.advantages-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.categories-link:active {
+.categories-link:active,
+.advantages-link:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+/*--------------*/
+
+.categories-slider {
+  position: relative;
+  padding: 22px 25px;
+  margin-bottom: 53px;
+
+  width: 570px;
+
+  color: #ffffff;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+
+  background: url("../img/man-perforator.jpg") no-repeat top center;
+  background-color: #af9e89;
+}
+
+.btn-slider-perf {
+  position: absolute;
+  left: 25px;
+  top: 114px;
+
+  width: 22px;
+  height: 40px;
+
+  font-size: 0;
+  
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+}
+
+.btn-slider-screwdriver {
+  position: absolute;
+  right: 20px;
+  top: 114px;
+
+  width: 22px;
+  height: 40px;
+
+  font-size: 0;
+  
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+}
+
+.btn-slider-perf::before {
+  position: absolute;
+  left: 270px;
+  top: 106px;
+
+  content: "";
+  
+  width: 6px;
+  height: 6px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  
+  background-color: #ffffff;
+}
+
+.btn-slider-screwdriver::before {
+  position: absolute;
+  right: 275px;
+  top: 106px;
+
+  content: "";
+  
+  width: 6px;
+  height: 6px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  
+  background-color: #ffffff;
+}
+
+.category-perforators:checked ~ .categories-slider .btn-slider-perf::before,
+.category-screwdriver:checked ~ .categories-slider .btn-slider-screwdriver::before {
+  background-color: red;
+}
+
+.categories-slider-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.item-slider-title {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider-item p {
+  margin: 0;
+  margin-bottom: 121px;
+
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn-slider {
+  padding: 10px 48px;
+
+  border-radius: 2px;
+}
+
+.slider-item {
+  display: none;
+}
+
+.category-perforators:checked ~ .categories-slider .slide-perforators,
+.category-screwdriver:checked ~ .categories-slider .slide-screwdriver {
+  display: block;
+}
+
+.category-perforators:checked ~ .categories-slider {
+  background: url("../img/man-perforator.jpg") no-repeat top center;
+  background-color: #af9e89;
+}
+
+.category-screwdriver:checked ~ .categories-slider {
+  background: url("../img/man-screwdriver.jpg") no-repeat top center;
+  background-color: #af9e89;
+}
+
+.categories-slider::before,
+.categories-slider::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.categories-slider::before {
+  background-image: url("../img/man-perforator.jpg");
+}
+
+.categories-slider::after {
+  background-image: url("../img/man-screwdriver.jpg");
+}
+
+/*--------------*/
+
+.advantages {
+  margin-bottom: 53px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-block {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.advantage-discount {
+  background: url("../img/icon-full-cart.svg") no-repeat 196px 26px;
+  background-color: #8ed78f;
+} 
+
+.advantage-delivery {
+  background: url("../img/icon-delivery-car.svg") no-repeat 191px 33px;
+  background-color: #ffc047;
+}
+
+
+
+
 
 .main-about-us {
   width: 520px;

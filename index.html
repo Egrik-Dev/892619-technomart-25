@@ -58,22 +58,68 @@
 		<main class="main">
 			<div class="wrapper main-wrapper">
 				<section class="categories">
+					<h2 class="visually-hidden">Категории товаров</h2>
 					<ul class="categories-list">
 						<li class="categories-block categories-materials">
 							<div class="flag flag-new flag-new-categories"><span class="visually-hidden">новинка</span></div>
-							<h2 class="categories-title">Материалы</h2>
+							<h3 class="categories-title">Материалы</h2>
 							<a class="categories-link categories-link-materials" href="#">На любой вкус</a>
 						</li>
 						<li class="categories-block categories-tools">
-							<h2 class="categories-title">Инструмент</h2>
+							<h3 class="categories-title">Инструмент</h2>
 							<a class="categories-link categories-link-tools" href="#">На все случаи</a>
 						</li>
 						<li class="categories-block categories-technics">
-							<h2 class="categories-title">Техника</h2>
+							<h3 class="categories-title">Техника</h2>
 							<a class="categories-link categories-link-technics" href="#">Для стройки</a>
 						</li>
 					</ul>
 				</section>
+	
+	<!-- ИНПУТЫ ДЛЯ СЛАЙДЕРА -->
+				
+			<input class="visually-hidden category-perforators" id="category-perforators" type="radio" name="toggle" checked>
+			<input class="visually-hidden category-screwdriver" id="category-screwdriver" type="radio" name="toggle">
+
+
+	<!-- СЛАЙДЕР -->
+					
+				<section class="categories-slider">
+					<h2 class="visually-hidden">Слайдер с категориями товаров</h2>
+					<label class="btn-slider-perf" for="category-perforators">Перфораторы</label>
+					<label class="btn-slider-screwdriver" for="category-screwdriver">Дрели</label>
+					<ul class="categories-slider-list">
+						<li class="slider-item slide-perforators" id="perforators">
+							<h3 class="item-slider-title">Перфораторы</h3>
+							<p>Настоящие мужские игрушки</p>
+							<a class="btn btn-slider" href="#">Открыть каталог</a>
+						</li>
+						<li class="slider-item slide-screwdriver" id="screwdriver">	
+							<h3 class="item-slider-title">Дрели</h3>
+							<p>Соседям на радость!</p>
+							<a class="btn btn-slider" href="#">Открыть каталог</a>
+						</li>
+					</ul>
+				</section>
+
+	<!-- БЛОК ПРЕИМУЩЕСТВА -->
+
+				<section class="advantages">
+					<h2 class="visually-hidden">Блок с преимуществами</h2>
+					<ul class="advantages-list">
+						<li class="advantages-block advantage-discount">
+							<h3 class="advantages-title">Скидка 50%</h3>
+							<a class="advantages-link advantages-link-discount" href="#">На 350 товаров</a>
+						</li>
+						<li class="advantages-block advantage-delivery">
+							<h3 class="advantages-title">Доставка</h3>
+							<a class="advantages-link advantages-link-delivery" href="#">Бесплатно</a>
+						</li>
+					</ul>
+				</section>
+
+	<!-- БЛОК О НАС -->
+
 				<section class="main-about-us">
 					<h2 class="index-title">КОМПАНИЯ «Техномарт»</h2>
 					<div class="first-p">
