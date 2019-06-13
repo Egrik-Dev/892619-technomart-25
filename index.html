@@ -56,21 +56,21 @@
 	<!-- MAIN -->
 
 		<main class="main">
-			<div class="wrapper main-wrapper">
+			<div class="wrapper">
 				<section class="categories">
 					<h2 class="visually-hidden">Категории товаров</h2>
 					<ul class="categories-list">
 						<li class="categories-block categories-materials">
 							<div class="flag flag-new flag-new-categories"><span class="visually-hidden">новинка</span></div>
-							<h3 class="categories-title">Материалы</h2>
+							<h3 class="categories-title">Материалы</h3>
 							<a class="categories-link categories-link-materials" href="#">На любой вкус</a>
 						</li>
 						<li class="categories-block categories-tools">
-							<h3 class="categories-title">Инструмент</h2>
+							<h3 class="categories-title">Инструмент</h3>
 							<a class="categories-link categories-link-tools" href="#">На все случаи</a>
 						</li>
 						<li class="categories-block categories-technics">
-							<h3 class="categories-title">Техника</h2>
+							<h3 class="categories-title">Техника</h3>
 							<a class="categories-link categories-link-technics" href="#">Для стройки</a>
 						</li>
 					</ul>
@@ -78,8 +78,8 @@
 	
 	<!-- ИНПУТЫ ДЛЯ СЛАЙДЕРА -->
 				
-			<input class="visually-hidden category-perforators" id="category-perforators" type="radio" name="toggle" checked>
-			<input class="visually-hidden category-screwdriver" id="category-screwdriver" type="radio" name="toggle">
+				<input class="visually-hidden category-perforators" id="category-perforators" type="radio" name="toggle" checked>
+				<input class="visually-hidden category-screwdriver" id="category-screwdriver" type="radio" name="toggle">
 
 
 	<!-- СЛАЙДЕР -->
@@ -206,10 +206,58 @@
 						</li>
 					</ul>
 				</section>
+			</div>
 
+	<!-- БЛОК ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ -->
+
+				<section class="services">
+					<div class="inner-wrapper">
+						<h2 class="index-title">Сервисы</h2>
+						<p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+						<div class="services-slider">
+							<input class="visually-hidden service-delivery" id="service-delivery" type="radio" name="services-toggle" checked>
+							<input class="visually-hidden service-guarantee" id="service-guarantee" type="radio" name="services-toggle">
+							<input class="visually-hidden service-credit" id="service-credit" type="radio" name="services-toggle">
+							<ul class="services-slider-menu">
+								<li class="services-title">
+									<label class="service-slide slide-delivery" for="service-delivery">Доставка</label>
+								</li>
+								<li class="services-title">
+									<label class="service-slide slide-guarantee" for="service-guarantee">Гарантия</label>
+								</li>
+								<li class="services-title">
+									<label class="service-slide slide-credit" for="service-credit">Кредит</label>
+								</li>
+							</ul>
+							<ul class="services-slider-list">
+								<li class="services-slider-item">
+									<h3 class="services-item-title">Доставка</h3>
+									<p class="services-item-descrition">Мы с удовольствием доставим ваш товар прямо 
+									к вашему подъезду совершенно бесплатно!
+									Ведь мы неплохо заработаем, 
+									поднимая его на ваш этаж!</p>
+									<img class="services-item-image" src="img/.jpg" width="0" height="0" alt="">
+								</li>
+								<li class="services-slider-item">
+									<h3 class="services-item-title">Гарантия</h3>
+									<p class="services-item-descrition">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами</p>
+									<img class="services-item-image" src="img/.jpg" width="0" height="0" alt="">
+								</li>
+								<li class="services-slider-item">
+									<h3 class="services-item-title">Кредит</h3>
+									<p class="services-item-descrition">Залезть в долговую яму стало проще! 
+									Кредитные консультанты придут вам на помощь.</p>
+									<a class="btn" href="#">Отправить заявку</a>
+									<img class="services-item-image" src="img/.jpg" width="0" height="0" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 
 	<!-- БЛОК О НАС -->
 
+			<div class="wrapper">
 				<section class="main-about-us">
 					<h2 class="index-title">КОМПАНИЯ «Техномарт»</h2>
 					<div class="first-p">
