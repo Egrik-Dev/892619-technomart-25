@@ -46,11 +46,13 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   font: inherit;
 
-  padding-left: 40px;
+  padding: 10px 0;
+
+/*  padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-
+*/
   cursor: pointer;
   font-size: 14px;
   line-height: 18px;
@@ -60,6 +62,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border: none;
+  border-radius: 3px;
 }
 
 .main-contacts .btn-container {
@@ -862,10 +865,6 @@ input[type="radio"].visually-hidden {
 
 /*--------------*/
 
-.advantages {
-  margin-bottom: 53px;
-}
-
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -892,7 +891,60 @@ input[type="radio"].visually-hidden {
   background-color: #ffc047;
 }
 
+/*-------------*/
 
+.block-title {
+  display: flex;
+  justify-content: space-between;
+  width: 890px;
+  padding: 25px;
+  margin-bottom: 20px;
+
+  background-color: #f9f5f0;
+}
+
+.block-title .blue-title {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 3px;
+
+  color: #32425c;
+}
+
+.block-btn {
+  width: 252px;
+}
+
+.popular-products {
+  margin-bottom: 22px;
+}
+
+.popular-manufacturer {
+  margin-bottom: 22px;
+}
+
+.manufacturer-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+  list-style: none;
+}
+
+.manufacturer-item {
+  display: flex;
+  width: 218px;
+  height: 144px;
+  margin-bottom: 20px;
+
+  border: 1px solid #eaeaea;
+}
+
+.manufacturer-item-image {
+  margin: auto;
+}
 
 
 
@@ -964,6 +1016,10 @@ input[type="radio"].visually-hidden {
   height: 2px;
   
   background-color: #ee3643;
+}
+
+.btn-about-us {
+  width: 220px;
 }
 
 .main-contacts {
@@ -1682,6 +1738,27 @@ input[type="radio"].visually-hidden {
 .list-products li:nth-child(3n) {
   margin-right: 0px;
 }
+
+.index-list-poducts {
+  margin-bottom: 0;
+  width: 940px;
+  font-family: "PT Sans";
+}
+
+.index-list-poducts li:nth-child(3n) {
+  margin-right: 20px;
+}
+
+.index-list-poducts li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.product-item-index {
+  margin-bottom: 0;
+}
+
+
+
 
 .list-pag {
   display: flex;
