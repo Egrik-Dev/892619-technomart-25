@@ -963,7 +963,7 @@ input[type="radio"].visually-hidden {
 .services {
   padding-top: 64px;
   padding-bottom: 100px;
-  margin-bottom: 75px;
+  margin-bottom: 79px;
 
   background-color: #f4f8f9;
 }
@@ -1005,11 +1005,27 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-list {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 620px;
 
   list-style: none;
+}
+
+.services-slider-list::after {
+  position: absolute;
+
+  content: "";
+
+  right: 0px;
+  top: 0px;
+  width: 468px;
+  height: 261px;
+
+  background-image: url("../img/car.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .service-slide {
@@ -1028,7 +1044,98 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.services-item-title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
 
+.services-item-descrition {
+  margin: 0;
+}
+
+.description-delivery {
+  width: 275px;
+}
+
+.descrition-guarantee {
+  width: 374px;
+}
+
+.descrition-credit {
+  width: 279px;
+  margin-bottom: 25px;
+}
+
+.services-slider-item {
+  display: none;
+}
+
+.service-delivery:checked ~ .services-slider-list .slider-item-delivery,
+.service-guarantee:checked ~ .services-slider-list .slider-item-guarantee,
+.service-credit:checked ~ .services-slider-list .slider-item-credit {
+  display: block;
+}
+
+.service-delivery:checked ~ .services-slider-menu .slide-delivery,
+.service-guarantee:checked ~ .services-slider-menu .slide-guarantee,
+.service-credit:checked ~ .services-slider-menu .slide-credit {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.service-delivery:checked ~ .services-slider-list::after {
+  position: absolute;
+
+  content: "";
+
+  right: 0px;
+  top: 0px;
+  width: 468px;
+  height: 261px;
+
+  background-image: url("../img/car.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-guarantee:checked ~ .services-slider-list::after {
+  position: absolute;
+
+  content: "";
+
+  right: -87px;
+  top: 0px;
+  width: 389;
+  height: 283px;
+
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-credit:checked ~ .services-slider-list::after {
+  position: absolute;
+
+  content: "";
+
+  right: -10px;
+  top: -2px;
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.btn-credit {
+  width: 195px;
+}
 
 
 
@@ -2355,7 +2462,7 @@ input[type="radio"].visually-hidden {
 
 .modal-btn-order,
 .modal-btn-bookmark {
-  width: 140px;
+  width: 220px;
   margin-right: 20px;
 }
 

@@ -142,7 +142,6 @@
   			}
 
 	    	// --- КОРЗИНА ---
-
 	    	for (var i = 0; i <= productsBuy.length-1; i++) {
 	    		var product = productsBuy[i];
 	    		product.addEventListener("click", function(evt) {
