@@ -10,8 +10,6 @@
  			var storageName = "";
  			var storageMail = "";
 	    	var mapPopup = document.querySelector(".modal-map");
-	    	// var mapClose = document.querySelector(".modal-close");
-
 	   		var productsBuy = document.querySelectorAll(".product-btn-buy");
 	   		var productsBookmark = document.querySelectorAll(".product-btn-bookmarks");
 	    	var linkMap = document.querySelector(".btn-map");
@@ -19,12 +17,8 @@
 	    	var bookmarkPopup = document.querySelector(".modal-bookmark");
 	    	var headerCart = document.querySelector(".header-btn-cart");
 	    	var headerBookmark = document.querySelector(".header-btn-bookmarks");
-	    	// var cartClose = document.querySelector(".modal-close");
-	    	// var bookmarkClose = document.querySelector(".modal-close");
 	    	var contShoppingCart = document.querySelectorAll(".btn-next");
 	    	var contShoppingBook = document.querySelectorAll(".btn-next");
-  
-	    	// --- ФОРМА ОБРАТНОЙ СВЯЗИ ---
 
 			try {
 				storageName = localStorage.getItem("modalName");
@@ -105,8 +99,6 @@
 	  			});  
   			}
 
-	    	// --- КАРТА ---
-
 	    	if (linkMap) {
 		    	linkMap.addEventListener("click", function(evt) {
 		    		evt.preventDefault();
@@ -114,12 +106,6 @@
 		    		overlay.classList.add("modal-show-overlay");
 		    	});
 	    	}
-
- 	    // 	close.addEventListener("click", function(evt) {
-	    	// 	evt.preventDefault();	    		
-	    	// 	mapPopup.classList.remove("modal-show");
-	    	// 	overlay.classList.remove("modal-show-overlay");
-	    	// });
 
 	    	if (mapPopup) {
 		    	overlay.addEventListener("click", function(evt) {
@@ -141,7 +127,6 @@
 	  			}); 
   			}
 
-	    	// --- КОРЗИНА ---
 	    	for (var i = 0; i <= productsBuy.length-1; i++) {
 	    		var product = productsBuy[i];
 	    		product.addEventListener("click", function(evt) {
@@ -151,12 +136,6 @@
 	    		overlay.classList.add("modal-show-overlay");
 	    	});
 	    	}
-
- 	    // 	close.addEventListener("click", function(evt) {
-	    	// 	evt.preventDefault();	    		
-	    	// 	cartPopup.classList.remove("modal-show");
-	    	// 	overlay.classList.remove("modal-show-overlay");
-	    	// });
 
 	    	if (cartPopup) {
 		    	overlay.addEventListener("click", function(evt) {
@@ -189,8 +168,6 @@
 	  			});
   			}
 
-  			// --- ЗАКЛАДКИ ---
-
 	    	for (var i = 0; i <= productsBookmark.length-1; i++) {
 	    		var productBook = productsBookmark[i];
 	    		productBook.addEventListener("click", function(evt) {
@@ -200,12 +177,6 @@
 	    		overlay.classList.add("modal-show-overlay");
 	    	});
 	    	}
-
- 	    // 	close.addEventListener("click", function(evt) {
-	    	// 	evt.preventDefault();	    		
-	    	// 	bookmarkPopup.classList.remove("modal-show");
-	    	// 	overlay.classList.remove("modal-show-overlay");
-	    	// });
 
 	    	if (bookmarkPopup) {
 		    	overlay.addEventListener("click", function(evt) {

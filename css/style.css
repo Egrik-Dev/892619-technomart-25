@@ -298,7 +298,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   margin-bottom: 3px;
-  padding: 10px 50px 9px 70px;
+  padding: 10px 49px 9px 70px;
 
   font-size: 21px;
   line-height: 21px;
@@ -851,6 +851,12 @@ input[type="radio"].visually-hidden {
 }
 
 .manufacturer-item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
@@ -1648,7 +1654,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 218px;
-  margin: 0 20px 20px 0;
+  margin-right: 20px;
 
   -webkit-box-align: center;
 
