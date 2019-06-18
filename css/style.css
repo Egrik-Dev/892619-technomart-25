@@ -1676,6 +1676,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-title {
+  width: 80%;
   margin: 0 0 5px 0;
   padding: 0 30px;
 
