@@ -1637,10 +1637,6 @@ input[type="radio"].visually-hidden {
   margin-right: 0px;
 }
 
-.product-item-index {
-  margin-bottom: 0;
-}
-
 .product-item {
   position: relative;
 
@@ -1654,7 +1650,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 218px;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
 
   -webkit-box-align: center;
 
@@ -1663,6 +1659,10 @@ input[type="radio"].visually-hidden {
           align-items: center;
 
   border: 1px solid #e5e5e5;
+}
+
+.product-item-index {
+  margin-bottom: 0;
 }
 
 .product-item:nth-last-of-type(1),
