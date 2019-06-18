@@ -154,15 +154,15 @@ input[type="radio"].visually-hidden {
 }
 
 .header-search-input:hover {
-  background-color: #212a3a;
   background: url("../img/icon-search.svg") no-repeat 17px 12px;
+  background-color: #212a3a;
 }
 
 .header-search-input:focus {
   color: #000000;
 
-  background-color: #ffffff;
   background: url("../img/icon-search-red.svg") no-repeat 17px 12px;
+  background-color: #ffffff;
   outline: none;
 }
 
