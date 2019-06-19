@@ -49,7 +49,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 
   cursor: pointer;
@@ -155,13 +154,15 @@ input[type="radio"].visually-hidden {
 }
 
 .header-search-input:hover {
-  background: #212a3a url("../img/icon-search.svg") no-repeat 17px 12px;
+  background: url("../img/icon-search.svg") no-repeat 17px 12px;
+  background-color: #212a3a;
 }
 
 .header-search-input:focus {
   color: #000000;
 
-  background: #ffffff url("../img/icon-search-red.svg") no-repeat 17px 12px;
+  background: url("../img/icon-search-red.svg") no-repeat 17px 12px;
+  background-color: #ffffff;
   outline: none;
 }
 
@@ -551,15 +552,18 @@ input[type="radio"].visually-hidden {
 }
 
 .categories-materials {
-  background: #ffbf47 url("../img/icon-paint-bucket.svg") no-repeat 213px 31px;
+  background: url("../img/icon-paint-bucket.svg") no-repeat 213px 31px;
+  background-color: #ffbf47;
 }
 
 .categories-tools {
-  background: #3bbce3 url("../img/icon-screwdriver.svg") no-repeat 197px 33px;
+  background: url("../img/icon-screwdriver.svg") no-repeat 197px 33px;
+  background-color: #3bbce3;
 }
 
 .categories-technics {
-  background: #dc91d8 url("../img/icon-tractor.svg") no-repeat 191px 31px;
+  background: url("../img/icon-tractor.svg") no-repeat 191px 31px;
+  background-color: #dc91d8;
 }
 
 .categories-title,
@@ -579,7 +583,6 @@ input[type="radio"].visually-hidden {
   padding: 10px 0;
 
   text-align: center;
-  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -608,7 +611,8 @@ input[type="radio"].visually-hidden {
 
   color: #ffffff;
 
-  background: #af9e89 url("../img/man-perforator.jpg") no-repeat top center;
+  background: url("../img/man-perforator.jpg") no-repeat top center;
+  background-color: #af9e89;
 }
 
 .btn-slider-perf {
@@ -715,11 +719,13 @@ input[type="radio"].visually-hidden {
 }
 
 .category-perforators:checked ~ .categories-slider {
-  background: #af9e89 url("../img/man-perforator.jpg") no-repeat top center;
+  background: url("../img/man-perforator.jpg") no-repeat top center;
+  background-color: #af9e89;
 }
 
 .category-screwdriver:checked ~ .categories-slider {
-  background: #af9e89 url("../img/man-screwdriver.jpg") no-repeat top center;
+  background: url("../img/man-screwdriver.jpg") no-repeat top center;
+  background-color: #af9e89;
 }
 
 .categories-slider::before,
@@ -730,11 +736,11 @@ input[type="radio"].visually-hidden {
 }
 
 .categories-slider::before {
-  background: #af9e89 url("../img/man-perforator.jpg") no-repeat top center;
+  background-image: url("../img/man-perforator.jpg");
 }
 
 .categories-slider::after {
-  background: #af9e89 url("../img/man-screwdriver.jpg") no-repeat top center;
+  background-image: url("../img/man-screwdriver.jpg");
 }
 
 .advantages-list {
@@ -760,11 +766,13 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-discount {
-  background: #8ed78f url("../img/icon-full-cart.svg") no-repeat 196px 26px;
+  background: url("../img/icon-full-cart.svg") no-repeat 196px 26px;
+  background-color: #8ed78f;
 } 
 
 .advantage-delivery {
-  background: #ffc047 url("../img/icon-delivery-car.svg") no-repeat 191px 33px;
+  background: url("../img/icon-delivery-car.svg") no-repeat 191px 33px;
+  background-color: #ffc047;
 }
 
 .popular-products {
@@ -1082,10 +1090,6 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.map {
-  background-color: #dfddd9;
-}
-
 .main-contacts .btn-container {
   display: block;
   margin-top: 32px;
@@ -1275,7 +1279,7 @@ input[type="radio"].visually-hidden {
   width: 4px;
   height: 4px;
 
-  background-color: #ababab;
+  background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -2469,7 +2473,8 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 
   border: 0;
-  background: transparent url("../img/icon-red-chest.svg") no-repeat 0 0;
+  background-color: transparent;
+  background: url("../img/icon-red-chest.svg") no-repeat 0 0;
   cursor: pointer;
 }
 
