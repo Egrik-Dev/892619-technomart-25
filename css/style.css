@@ -1473,12 +1473,12 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.btn-filter:hover {
-  border-color: #bdc6ca;  
-}
-
 .btn-filter:active {
   border-color: #ee3643;
+}
+
+.btn-filter:hover {
+  border-color: #bdc6ca;  
 }
 
 .products {
