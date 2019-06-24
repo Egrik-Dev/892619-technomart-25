@@ -1755,10 +1755,6 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
 }
 
-/*.product-item-index {
-  margin-bottom: 0;
-}*/
-
 .product-item-index:nth-last-of-type(1),
 .product-item-index:nth-last-of-type(2),
 .product-item-index:nth-last-of-type(3),
@@ -1809,9 +1805,7 @@ input[type="radio"].visually-hidden {
   padding: 42px 0;
 
   -webkit-box-align: center;
-
       -ms-flex-align: center;
-
           align-items: center;
   
   background-color: rgba(255,255,255,1);
